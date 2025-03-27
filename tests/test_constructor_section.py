@@ -9,17 +9,19 @@ class TestConstructorSection:
         driver.get(Config.URL)
         driver.find_element(*EnterLocators.SAUCES_TAB).click()
         driver.find_element(*EnterLocators.BREADS_TAB).click()
-        assert EnterLocators.CURRENT_BREADS_TAB, "Another tab is selected"
-        driver.quit()
+        element = driver.find_element(*EnterLocators.CURRENT_BREADS_TAB)
+        assert element.is_displayed(), "Another tab is selected"
 
     def test_go_to_the_sauces_section(self, driver):
         driver.get(Config.URL)
         driver.find_element(*EnterLocators.SAUCES_TAB).click()
-        assert EnterLocators.CURRENT_SAUCES_TAB, "Another tab is selected"
-        driver.quit()
+        element = driver.find_element(*EnterLocators.CURRENT_SAUCES_TAB)
+        assert element.is_displayed(), "Another tab is selected"
+
 
     def test_go_to_the_toppings_section(self, driver):
         driver.get(Config.URL)
         driver.find_element(*EnterLocators.TOPPINGS_TAB).click()
-        assert EnterLocators.CURRENT_TOPPINGS_TAB, "Another tab is selected"
-        driver.quit()
+        element = driver.find_element(*EnterLocators.CURRENT_TOPPINGS_TAB)
+        assert element.is_displayed(), "Another tab is selected"
+

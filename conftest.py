@@ -9,3 +9,4 @@ def driver():
     chrome.get(Config.URL)
     yield chrome
     chrome.quit()
+

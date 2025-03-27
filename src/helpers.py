@@ -1,12 +1,6 @@
 import random
 
 class Helpers:
-    EMAIL = 'Mike_Kozulin_19_709@yandex.ru'
-    PASSWORD = 'qwerty'
-    INC_PASSWORD = 'qwert'
-    NAME = 'Mike'
-
-
 
     def get_random_email():
         email_name = 'Mike_Kozuiln_19_'

@@ -36,16 +36,6 @@ class EnterLocators:
     # активная вкладка Начинки в конструкторе
     CURRENT_TOPPINGS_TAB = By.XPATH, "//div[contains(@class, 'tab_tab_type_current__2BEPc')] //span[text()='Начинки']"
 
-    # # поле Email на странице login и registration
-    # EMAIL_FIELD = By.XPATH, "//input[@class = 'text input__textfield text_type_main-default' and @name = 'name']"
-    # # поле Пароль на странице login и registration
-    # PASSWORD_FIELD = By.XPATH, "//input[@class = 'text input__textfield text_type_main-default' and @name = 'Пароль']"
-
-    # NAME_FIELD = By.XPATH, "//label[contains(@class = 'input__placeholder') and text() = 'Имя']/"
-    # # поле Email на странице login и registration
-    # EMAIL_FIELD = By.XPATH, "//label[contains(@class = 'input__placeholder') and text() = 'Email']/"
-    # # поле Пароль на странице login и registration
-    # PASSWORD_FIELD = By.XPATH, "//label[contains(@class = 'input__placeholder') and text() = 'Пароль']/"
 
 
 
